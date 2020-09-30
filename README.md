@@ -1,4 +1,4 @@
-<h2>About the Project<h2>
+<h2>About the Project</h2>
 
 This project is a Mini C Compiler, written in the language C. Lex and Yacc were the main tools which were used to build this. The project was implemented through a series of stages such as generation of the symbol table, creation of the abstract syntax tree, generation of intermediate code, optimization of this intermediate code and finally the conversion of this code to assembly code. The mini C compiler is capable of efficiently compiling the given input C code, while catching any errors that might be present in the source code. 
 
