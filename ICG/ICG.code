@@ -1,0 +1,44 @@
+0: foo:
+1: arg a
+2: arg b
+3: t0 = a + b
+4: a = t0
+5: main:
+6: c = 10
+7: b = 20
+8: t1 = 4 * 0
+9: t2 = arr[t1]
+10: a = t2
+11: d = 12
+12: t3 = 4 * 3
+13: t4 = arr[t3]
+14: arr[t3] = d
+15: i = 0
+16: t5 = i < 10
+17: if t5 goto 23
+18: goto 43
+19: t6 = i
+20: t7 = i + 1
+21: i = t7
+22: goto 16
+23: a = 3
+24: t8 = c > 1
+25: if t8 goto 27
+26: goto 33
+27: t9 = c
+28: t10 = c - 1
+29: c = t10
+30: t11 = c + 1
+31: a = t11
+32: goto 24
+33: t12 = a > 2
+34: if t12 goto 36
+35: goto 42
+36: t13 = c
+37: t14 = c + 1
+38: c = t14
+39: param 3
+40: param 4
+41: call foo
+42: goto 19
+43: exit

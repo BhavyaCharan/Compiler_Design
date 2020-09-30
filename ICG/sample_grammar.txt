@@ -1,0 +1,31 @@
+------------ Grammar Before the ICG stage --------------------- 
+
+function -> type IDENTIFIER '(' argument_list ')' compound_statement { //some action }
+
+
+
+
+
+
+------------ Grammar at the ICG stage ---------------------
+
+function -> type identifier 	
+			{
+				func_type = current_dtype;
+				is_declaration = 0;
+				current_scope = create_new_scope();
+				gencode($2->lexeme + string(":"));
+			}
+
+		 '(' argument_list ')' 	
+		 	{
+				is_declaration = 0;
+				fill_parameter_list($2,param_list,p_idx);
+				p_idx = 0;
+				is_func = 1;
+				p=1;
+			}
+
+		 compound_stmt	{   is_func = 0;	}
+          
+		;

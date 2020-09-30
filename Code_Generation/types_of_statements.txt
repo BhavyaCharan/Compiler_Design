@@ -1,0 +1,10 @@
+ Assignment statements:		Condition statements:	
+	a = 10				t0 = d >= a
+	b = 12				t3 = a < 10
+	d = 12
+	j = 0
+
+
+ If statements:			Goto statements:
+	if t3 goto 15			goto 15
+	if t0 goto 8			goto 21
