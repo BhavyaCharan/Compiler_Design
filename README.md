@@ -2,7 +2,7 @@
 
 This project is a Mini C Compiler, written in the language C. Lex and Yacc were the main tools which were used to build this. The project was implemented through a series of stages such as generation of the symbol table, creation of the abstract syntax tree, generation of intermediate code, optimization of this intermediate code and finally the conversion of this code to assembly code. The mini C compiler is capable of efficiently compiling the given input C code, while catching any errors that might be present in the source code. 
 
-<h3>Architecture of the language<h3>
+<h3>Architecture of the language</h3>
 
 The implemented mini-compiler handles the syntax and semantics of the C language’s grammar. It identifies the syntax errors present in the input program and provides useful error messages along with the line numbers. <br>
 This helps in faster error correction. It identifies errors such as missing semicolons, unidentified tokens, using undeclared variables, mismatched brackets, redeclaration within a scope, etc. The compiler is also capable of ignoring all forms of valid comments that may be present in the code. Invalid comments of the C language are identified as errors and returned accordingly.<br>
