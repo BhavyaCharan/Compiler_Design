@@ -7,7 +7,7 @@ and foo is a random function
 //and there's a comment within a comment
 */
 void foo(int a, int b) {
-    a = a + b;
+    a = a - b;
 }
 
 int main() {
